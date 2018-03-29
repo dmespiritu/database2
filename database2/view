@@ -1,0 +1,1 @@
+CREATE VIEW `accounts_v_members` AS SELECT `membership_number`,`full_names`,`gender` FROM `members`;
