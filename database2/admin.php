@@ -6,19 +6,18 @@
 </head>
 <body>
 <?php
-   include("session.php");		
+   include("session.php");      
    session_start();
 ?>
 <style>
 body{
-    background-image: ('/var/www/html/pic.jpg');
 }
 </style>
-		<h1><a href = "admin.php">BlazeCoin Admin <?php echo $login_session; ?></h1> 
-     		<h2><a href = "logout.php">Sign Out Here</a></h2>
+        <h1><a href = "admin.php">BlazeCoin Admin <?php echo $login_session; ?></h1> 
+            <h2><a href = "logout.php">Sign Out Here</a></h2>
 
 <h2>Add CryptoCurrency Here </h2>
-<form action="insertShoes.php" method="post">
+<form action="insertCrypto.php" method="post">
     <p>
         <label for="name">Name:</label>
         <input type="text" name="name" id="pname">
@@ -40,16 +39,17 @@ body{
 
 
 $database = "BlazeCoin";
-$table = "Shoes";
+$table = "Blazecoin";
 
 
-$sql = "SELECT * FROM Shoes";
+$sql = "SELECT * FROM Blazecoin";
 $result = $db->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "ProductID: " . $row["ProductID"]. " - Name: " . $row["Name"]. " - Price: " . $row["Price"]. " - Color: " . $row["Color"]. " - Weight: " . $row["Weight"]. " - Upper Height: " . $row["UpperHeight"]. " - Size: " . $row["Size"]. " - Quantity: " . $row["Quantity"]. "<br>";
+        echo "Crypto_ID: " . $row["Crypto_ID"]. " - Name: " . $row["Name"]. " - Price: " . $row["Price"]. "
+        <br>";
     }
 } else {
     echo "0 results";
@@ -78,7 +78,7 @@ if ($result->num_rows > 0) {
         <label for="username">Username:</label>
         <input type="text" name="username" id="cUsername">
     </p>
-	
+    
     <p>
         <label for="password">Password:</label>
         <input type="text" name="password" id="cpassword">

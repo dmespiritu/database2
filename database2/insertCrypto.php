@@ -9,15 +9,7 @@ $table = "Blazecoin";
 if ($db){
 
 $insertCrypto = "INSERT INTO $table (Name, Price) 
-VALUES ('$_POST[Name]','$_POST[Price]')";
-mysqli_query($db,$insertCrypto);
-
-$insertCrypto = "INSERT INTO $table (Name, Price,) 
-VALUES ('$_POST[Name]','$_POST[Price]',)";
-mysqli_query($db,$insertCrypto);
-
-$insertCrypto = "INSERT INTO $table (Name, Price)
-VALUES ('$_POST[Name]','$_POST[Price]')";
+VALUES ('$_POST[name]','$_POST[price]')";
 mysqli_query($db,$insertCrypto);
 
 
