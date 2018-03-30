@@ -3,13 +3,13 @@
 include ("session.php");
 session_start();
  
-$database = "SneakerGang";
+$database = "BlazeCoin";
 $table = "Customer";
 
 if ($db){
 
-$insertCustomers = "INSERT INTO $table (FirstName, LastName, PhoneNumber, Username, Password) 
-VALUES ('$_POST[fName]', '$_POST[lName]','$_POST[pNumber]', '$_POST[username]', '$_POST[password]')";
+$insertCustomers = "INSERT INTO $table (Username, Password, Email) 
+VALUES ('$_POST[username]', '$_POST[password]','$_POST[email]', '$_POST[password]')";
 mysqli_query($db,$insertCustomers);
 
 
