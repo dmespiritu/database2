@@ -88,10 +88,31 @@ if ($result->num_rows > 0) {
     <input type="submit" value="Submit">
 </form>
 
+<!--
+Adding a customer to the database, make sure it's connected to BlazeCoin
+<form action="insertCustomers.php" method="post">
+    <p>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="cUsername">
+    </p>
+    <p>
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="cPassword">
+    </p>
+      
+    <p>
+        <label for="password">Email:</label>
+        <input type="text" name="email" id="cEmail">
+    </p>
+
+
+    <input type="submit" value="Submit">
+</form>
+-->
 
 <p>
 <?php
-$database = "SneakerGang";
+$database = "BlazeCoin";
 $table = "Customer";
 
 
