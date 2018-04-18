@@ -1,4 +1,4 @@
 <?php 
-exec("python addCoin.py");
+exec("python addCoin2.py");
 header("Location: BlazeCoin.php");
 ?>

@@ -2,7 +2,7 @@ import pymongo
 from pymongo import MongoClient
 
 client = MongoClient()
-db = client.UserCoin
+db = client.testDatabase
 search = {}
 UserCoin = db.UserCoin.find(search)
 

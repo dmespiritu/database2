@@ -20,7 +20,7 @@ body {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="SneakerGang.php" class="w3-bar-item w3-button"><b>BlazeCoin</b></a>
+    <a href="Admin.php" class="w3-bar-item w3-button"><b>BlazeCoin</b></a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       
@@ -43,6 +43,8 @@ body {
   <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Cart</h3>
   </div>
+
+	
 
     <div>
 	<?php
