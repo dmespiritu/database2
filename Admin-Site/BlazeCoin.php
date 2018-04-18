@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+    background-image: url("pic.jpg");
+}
+</style> 
 <body>
 
 <?php
@@ -19,7 +24,7 @@
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       
-      <a href="admin.php" class="w3-bar-item w3-button">Admin</a>
+      
 	<a href="viewCoin.php" class="w3-bar-item w3-button">Cart</a>
     </div>
   </div>
@@ -37,13 +42,13 @@
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CryptoCurrency</h3>
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Buy CryptoCurrency</h2>
   </div>
 
   <div class="w3-row-padding">
    <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">ByrdCoin</div>
+        <div class="w3-display-topleft w3-black w3-padding">ByrdCoin $920</div>
         <img src="KDX.jpg" alt="House" style="width:100%">
 		<form action="addToMongo1.php" method="post">
     </br>
@@ -56,7 +61,7 @@
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">BlazikenCoin</div>
+        <div class="w3-display-topleft w3-black w3-padding">BlazikenCoin $10,000</div>
         <img src="JordanXXXII.jpg" alt="House" style="width:100%">
 		<form action="addToMongo2.php" method="post">
     </br>

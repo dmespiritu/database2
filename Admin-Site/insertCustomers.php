@@ -9,7 +9,7 @@ $table = "Customer";
 if ($db){
 
 $insertCustomers = "INSERT INTO $table (Username, Password, Email) 
-VALUES ('$_POST[username]', '$_POST[password]','$_POST[email]', '$_POST[password]')";
+VALUES ('$_POST[username]', '$_POST[password]','$_POST[email]')";
 mysqli_query($db,$insertCustomers);
 
 

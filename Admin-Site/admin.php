@@ -2,17 +2,44 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>BlazeCoin</title>
 </head>
+<style>
+body {
+    background-image: url("pic.jpg");
+}
+</style> 
 <body>
 <?php
    include("session.php");      
    session_start();
 ?>
-<style>
-body{
-}
-</style>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="SneakerGang.php" class="w3-bar-item w3-button"><b>BlazeCoin</b> Products</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      
+      <a href="admin.php" class="w3-bar-item w3-button">Admin</a>
+      <a href="BlazeCoin.php"class="w3-bar-item w3-button">Customer View</a>
+    <a href="viewCoin.php" class="w3-bar-item w3-button">Cart</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <div class="w3-display-middle w3-margin-top w3-center">
+
+  </div>
+</header>
+</br>
+</br>
+
         <h1><a href = "admin.php">BlazeCoin Admin <?php echo $login_session; ?></h1> 
             <h2><a href = "logout.php">Sign Out Here</a></h2>
 
@@ -60,7 +87,7 @@ if ($result->num_rows > 0) {
 
 
 <h2> Add Customers </></h2>
-
+<!--
 <form action="insertCustomers.php" method="post">
     <p>
         <label for="fName">First Name:</label>
@@ -87,9 +114,11 @@ if ($result->num_rows > 0) {
 
     <input type="submit" value="Submit">
 </form>
-
-<!--
 Adding a customer to the database, make sure it's connected to BlazeCoin
+-->
+
+
+
 <form action="insertCustomers.php" method="post">
     <p>
         <label for="username">Username:</label>
@@ -108,7 +137,7 @@ Adding a customer to the database, make sure it's connected to BlazeCoin
 
     <input type="submit" value="Submit">
 </form>
--->
+
 
 <p>
 <?php
@@ -122,7 +151,7 @@ $result = $db->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-       echo "CustomerID: ". $row["CustomerID"]. " - Name: ". $row["FirstName"]. " " . $row["LastName"] . " - Phone Number: ". $row["PhoneNumber"]. " - Username: ". $row["Username"]. "<br>" ;
+       echo "Customer_ID: ". $row["Customer_ID"]. " - Email: ". $row["Email"]. " - Username: ". $row["Username"]. "<br>" ;
     }
 } else {
     echo "0 results";

@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+    background-image: url("pic.jpg");
+}
+</style> 
 <body>
 
 <?php
@@ -19,7 +24,7 @@
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       
-      <a href="admin.php" class="w3-bar-item w3-button">Admin</a>
+      <a href="BlazeCoin.php" class="w3-bar-item w3-button">Buy CryptoCurrency</a>
     </div>
   </div>
 </div>
