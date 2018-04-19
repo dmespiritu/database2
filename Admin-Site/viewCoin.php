@@ -25,6 +25,7 @@ body {
     <div class="w3-right w3-hide-small">
       
       <a href="BlazeCoin.php" class="w3-bar-item w3-button">Buy CryptoCurrency</a>
+	<a href="logout.php" class="w3-bar-item w3-button">Sign Out</a>	
     </div>
   </div>
 </div>

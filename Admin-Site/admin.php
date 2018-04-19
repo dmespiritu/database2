@@ -22,11 +22,12 @@ body {
     <a href="admin.php" class="w3-bar-item w3-button"><b>BlazeCoin</b> Products</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      
-      <a href="admin.php" class="w3-bar-item w3-button">Admin</a>
       <a href="BlazeCoin.php"class="w3-bar-item w3-button">Customer View</a>
       <a href="Elastic.php"class="w3-bar-item w3-button">Elastic</a> 
     <a href="viewCoin.php" class="w3-bar-item w3-button">Cart</a>
+	<a href="database.php" class="w3-bar-item w3=button">Database</a>
+	<a href="logout.php" class="w3-bar-item w3-button">Sign Out</a>
+
 
     </div>
   </div>
@@ -41,8 +42,8 @@ body {
 </br>
 </br>
 
-        <h1><a href = "admin.php">BlazeCoin Admin <?php echo $login_session; ?></h1> 
-            <h2><a href = "logout.php">Sign Out Here</a></h2>
+        <h1><a href = "admin.php">BlazeCoin Admin <?php echo $login_session; ?></a></h1>
+            
 
 <h2>Add CryptoCurrency Here </h2>
 <form action="insertCrypto.php" method="post">

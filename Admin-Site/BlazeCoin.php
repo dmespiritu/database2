@@ -26,6 +26,7 @@ body {
       
       
 	<a href="viewCoin.php" class="w3-bar-item w3-button">Cart</a>
+	<a href="logout.php" class="w3-bar-item w3-button">Sign Out</a>
     </div>
   </div>
 </div>
