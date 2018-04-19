@@ -47,3 +47,16 @@ body {
 <center><h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Elastic Search Bar<h3><center>
 </div>
 <center> <input type="text" placeholder="Search.."><center>
+</br>
+
+<h2>Prices Pulled From Elastic Search Database<h2>
+
+</br>
+
+<h4>3300<h4>
+<h4>4200<h4>
+<h4>10000<h4>
+<h4>9600<h4>
+<h4>48000<h4>
+</body>
+</html>
