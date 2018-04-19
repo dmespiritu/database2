@@ -44,14 +44,16 @@ body {
 </br>
 </br>
 
+
 <p>
 <?php
-$status = escapeshellcmd('sh ouput.sh');
-$output = shell_exec($status);
 
-echo $output
+		$input = escapeshellcmd('sh output.sh');
+   		$output = shell_exec($input);
+		echo $output; 
 ?>
 </p>
+
 <p>
 <?php
 if($db)
